@@ -61,7 +61,7 @@ bot.download_multiple_albums(ind_size = "X-Large 4K")
 ```
 
 ### 3. Function 3-- Download single or multiple individual images
-Go to the image url (example url: https://www.flickr.com/photos/dionisioyang/14825239237/in/photolist-oA4e84-2cBRC6H-9nNeyQ-2fyJNFq-2m5v4Mu-JnxBXq-26v1rc6-oA3JCG-56WhcN-PLv7oo-aoxTh3-Niyx5Y-26uzmvm-oA4P89-259mtMV-2fyJLpb-VxHkGA-CyuQ7Q-2fyJMJ5-PLveBG-6YWdPQ-235LBY5-YaqiwJ-9yPWMn-oZgrAR-oEzdjg-pGcaJq-rucYzZ-2fFVtMj-256VZqp-frZZSV-2qQkqcK-48GkrM-Dtotff-25SjksF-poR8nF-ExLyGQ-W5NfKu-poUef4-2qQmq2y-ru6DTt-2fyJNY9-oRYFve-j1H8Es-ru6EtX-6CKWu8-oShWic-2qQjiWc-DB1Htb-2crzetE), and copy and paste this img link to input. Same as downloading multiple albums, links must be entered one by one. **When finishing entering the links, type -1 in input**
+Go to the image url (example url: https://www.flickr.com/photos/orsonwang/54755913602/in/feed-56114802-1756665486-1-72157721777146765), and copy and paste this img link to input. Same as downloading multiple albums, links must be entered one by one. **When finishing entering the links, type -1 in input**
 ```python
 bot.download_respective_photo()
 ```
