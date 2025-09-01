@@ -1,5 +1,5 @@
 # FlickrPicDownload: Useful tools for downloading image off different resolution from Flickr
-Made by Edward Kao, *First version is published on Sep 2025 on PyPi*
+Made by Edward Kao, *First version was published on Sep 2025 on PyPi*
 
 ## installation and requirements
 ### 1. Installation
