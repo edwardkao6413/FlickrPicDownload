@@ -45,7 +45,7 @@ Intuitive as the words above, when users implement this command, just put album'
 ```python
 bot.download_single_album()
 ```
-Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution
+Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution)
 ```python
 bot.download_single_album(ind_size = "X-Large 4K")
 ```
@@ -55,7 +55,7 @@ Just keep entering the album's link into input, each input only allows one link,
 ```python
 bot.download_multiple_albums()
 ```
-Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution
+Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution)
 ```python
 bot.download_multiple_albums(ind_size = "X-Large 4K")
 ```
@@ -65,7 +65,7 @@ Go to the image url (example url: https://www.flickr.com/photos/dionisioyang/148
 ```python
 bot.download_respective_photo()
 ```
-Supposed users want to specify the img resolution: (all imgs are downloaded in specified resolution
+Supposed users want to specify the img resolution: (all imgs are downloaded in specified resolution)
 ```python
 bot.download_respective_photo(ind_size = "X-Large 4K")
 ```
