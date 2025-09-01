@@ -1,22 +1,50 @@
-For users downloading 2048p photos, which is the most fitted size picture for computer.
+# FlickrPicDownload: Useful tools for downloading image off different resolution from Flickr
+Made by Edward Kao, *First version is published on Sep 2025 on PyPi*
 
-First, you need to have flickr account, and apply for your own flickr api. Because we will use the api keys when downloading pictures. Flickr api application tutorial can be found in YouTube.
+## installation and requirements
+### 1. installation
+```bash
+pip install FlickrPicDownload
+```
 
-Second, after applying flickr api, you should download and import this package in your python. example below: import flickrdownload as flk
+### 2. Required packages
+Several basic packages are required for running this script, including:
+1. Python 3.x (Python >= 3.7 would be better)
+2. requests, bs4: For making query toward internet
+3. random
+4. re: For regular expression, identifying either photo id or photobook id within url.
+5. json
+6. flickrapi: For plugin user's flickrapi, User can apply for api token from flickr,
+Here's the function telling you which packages that users should install before using.
+```python
+from FlickrPicDownload import packages
+packages()
+```
 
-Owing to the package design, the creation of this package is based on several common packages in python. You can use .helps and .packages to see the detail. You must have these packages as basis so that this packages can be operable.
+## Usage
+### 0. Before downloading, api_token and img saving position is required
+-- login only by api_key and saving position, replaced your_api_key with your api token
+```python
+from FlickrPicDownload import loginFlk
+bot = loginFlk(api_key = u"your_api_key", file_safe_pos = "C:\\users\\xxxx\\target_folder\\")
+```
+-- login by api_key, saving position, user_email, and password, where user_email and password is optional
+```python
+from FlickrPicDownload import loginFlk
+bot = loginFlk(api_key = u"your_api_key", file_safe_pos = "C:\\users\\xxxx\\target_folder\\", user_email = "your_flickr_account_email", user_pw = "your_flickr_password")
+```
+-- Different resolutions for img
+Sizes contain: 'Square', 'Large Square', 'Thumbnail', 'Small', 'Small 320', 'Small 400', 'Medium', 'Medium 640', 'Medium 800', 'Large', 'Large 1600', 'Large 2048', 'X-Large 3K', 'X-Large 4K'. *Default size is set as "Large 2048", if users do not plugin any choice to ind_size parameter.*
+Users can see img size list by using command below
+```python
+from FlickrPicDownload import figuresizes
+figuresizes()
+```
+### 1. 
 
-Next, using the .loginFLK() method, entering your api keys and your computer storage path. (storage path should be entered like: C:\xxxx\xxxx\......, rather than C:/xxxx/xxxx/....)
 
-Following, You are able to employ the download format below. We have downloading multiple albums, downloading single album, downloading respective pictures and violent crawling methods.
 
-downloading multiple albums: You can enter several album links, and when you finish entering one link, you should press enter. After finishing entering, you must enter '-1'. (.download_multiple_albums())
-downloading single albums: Enter single album link, and the download will start. (.download_single_album())
-downloading respective album: You should use this method to download pictures, when your target pictures scatter in the album or this album is required membership to see. (.download_respective_photo())
-violent crawling: Downloading picture via raw web crawling rather than using flickrapi. This method is not recommended.
-Error results or no error but no pucture be downloaded or no error but not every picture be downloaded:
 
-You got the false link. Links must include the words 'album' rather than 'sets'
-The pictures in this album do not reach 2048p.
-Some of the pictures in this album are public, but the others are only for membership.
-Album editors do not provide other users with downloading. In this way, you can use the method 'downloading respective album'.
+
+
+
