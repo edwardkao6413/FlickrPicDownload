@@ -2,7 +2,7 @@
 Made by Edward Kao, *First version is published on Sep 2025 on PyPi*
 
 ## installation and requirements
-### 1. installation
+### 1. Installation
 ```bash
 pip install FlickrPicDownload
 ```
@@ -70,6 +70,10 @@ Supposed users want to specify the img resolution: (all imgs are downloaded in s
 bot.download_respective_photo(ind_size = "X-Large 4K")
 ```
 
+## Important notices
+**1. Flickr has brought forward a policy on May 2025 that photo owners can select whether they are willing to allow free accounts to download the photos with resolutions higher than 2048. Hence, some photos are not allowed to be downloaded.**
+**2. Some photo owners turn their albums into not allowing to use api download. This issue cause unsuccessful download as well.**
+**3. Supposed there's no error occurred but end up nothing being downloaded, this means the photos' resolution did not reach 2048.**
 
 
 
