@@ -40,9 +40,35 @@ Users can see img size list by using command below
 from FlickrPicDownload import figuresizes
 figuresizes()
 ```
-### 1. 
+### 1. Function 1-- Download all images in a single album
+Intuitive as the words above, when users implement this command, just put album's link into input.
+```python
+bot.download_single_album()
+```
+Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution
+```python
+bot.download_single_album(ind_size = "X-Large 4K")
+```
 
+### 2. Function 2-- Download images in multiple albums
+Just keep entering the album's link into input, each input only allows one link, which means supposed users want to enter the second album's link, they should press 'enter' first. **When finishing entering the links, type -1 in input**
+```python
+bot.download_multiple_albums()
+```
+Supposed users want to specify the img resolution: (all imgs from this album are downloaded in specified resolution
+```python
+bot.download_multiple_albums(ind_size = "X-Large 4K")
+```
 
+### 3. Function 3-- Download single or multiple individual images
+Go to the image url (example url: https://www.flickr.com/photos/dionisioyang/14825239237/in/photolist-oA4e84-2cBRC6H-9nNeyQ-2fyJNFq-2m5v4Mu-JnxBXq-26v1rc6-oA3JCG-56WhcN-PLv7oo-aoxTh3-Niyx5Y-26uzmvm-oA4P89-259mtMV-2fyJLpb-VxHkGA-CyuQ7Q-2fyJMJ5-PLveBG-6YWdPQ-235LBY5-YaqiwJ-9yPWMn-oZgrAR-oEzdjg-pGcaJq-rucYzZ-2fFVtMj-256VZqp-frZZSV-2qQkqcK-48GkrM-Dtotff-25SjksF-poR8nF-ExLyGQ-W5NfKu-poUef4-2qQmq2y-ru6DTt-2fyJNY9-oRYFve-j1H8Es-ru6EtX-6CKWu8-oShWic-2qQjiWc-DB1Htb-2crzetE), and copy and paste this img link to input. Same as downloading multiple albums, links must be entered one by one. **When finishing entering the links, type -1 in input**
+```python
+bot.download_respective_photo()
+```
+Supposed users want to specify the img resolution: (all imgs are downloaded in specified resolution
+```python
+bot.download_respective_photo(ind_size = "X-Large 4K")
+```
 
 
 
